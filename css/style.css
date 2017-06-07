@@ -93,6 +93,10 @@ a:hover, a:focus {
 	text-decoration: none;
 	color: #09A3AA;
 }
+.arrow-down a:hover, .arrow-down a:focus {
+	text-decoration: none;
+	color: #E8CD84;
+}
 
 /* Navigation */
 #menu {
@@ -196,13 +200,13 @@ a:hover, a:focus {
 }
 .intro h1 {
 	color: rgba(255,255,255,0.9);
-	font-size: 2.875em;
-	line-height: 1.326em; /* 46/61px */
-	font-weight: 600;
+	font-size: 3em;
+	line-height: 1.325em; /* 46/61px */
+	font-weight: 700;
 	letter-spacing: 1px;
 	text-transform: uppercase;
 }
-header .intro-text {
+.intro .intro-text {
 	/*padding-top: 12.5em;
 	padding-bottom: 8.125em;*/
     position: absolute;
@@ -219,6 +223,21 @@ header .intro-text {
 	top: 50%;
 	right: 0;
 	transform: translate(0, -50%);
+}
+.intro .arrow-down{
+	position: absolute;
+	bottom: 5%;
+}
+.arrow-down .fa {
+	font-size: 3em;
+	animation: move 1s ease-out infinite;
+	display: block;
+  margin: 0 auto;
+}
+@keyframes move {
+  50% {
+     transform: translate(0, 3px);
+  }
 }
 
 ul.certificate-links {
