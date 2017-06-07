@@ -470,6 +470,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	.service {
 		margin-top: 2.4em;
 	}
+	.text-larger {
+		font-size: 1.25em;
+	}
 }
 
 /* For Tablets */
