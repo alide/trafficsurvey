@@ -201,18 +201,17 @@ a:hover, a:focus {
 .intro h1 {
 	color: rgba(255,255,255,0.9);
 	font-size: 3em;
-	line-height: 1.325em; /* 46/61px */
+	line-height: 1.3125em; /* 48/63px */
+	margin-top: 1em;
+	margin-bottom: 0.625em;
 	font-weight: 700;
-	letter-spacing: 1px;
 	text-transform: uppercase;
 }
 .intro .intro-text {
-	/*padding-top: 12.5em;
-	padding-bottom: 8.125em;*/
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
 }
 .intro-text a:hover {
 	color: #54D4D9;
