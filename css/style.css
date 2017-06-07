@@ -243,8 +243,10 @@ ul.checklist li::before {
 	font: normal normal normal 20px/1 FontAwesome;
 	-webkit-font-smoothing: antialiased;
 	content: "\f046";
-	color: #05C3CB;
 	margin-right: 0.75em;
+}
+.dark ul.checklist li::before {
+	color: #05C3CB;
 }
 #intro3 ul.checklist li {
 	font-size: 1.125em;
