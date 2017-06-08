@@ -4,6 +4,7 @@ html, .root {
 }
 body, .article {
   font-family: Lato, sans-serif;
+	font-weight: 400;
   font-size: 1em;
   line-height: 1.625em;
   text-rendering: optimizeLegibility !important;
