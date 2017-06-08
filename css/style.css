@@ -226,7 +226,7 @@ a:hover, a:focus {
 }
 .intro .arrow-down{
 	position: absolute;
-	bottom: 5%;
+	bottom: 2.5%;
 }
 .arrow-down .fa {
 	font-size: 3em;
