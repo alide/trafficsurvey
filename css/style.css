@@ -229,13 +229,14 @@ a:hover, a:focus {
 }
 .arrow-down .fa {
 	font-size: 3em;
-	animation: move 1s ease-out infinite;
+	animation: move 1s ease-in-out infinite;
 	display: block;
   margin: 0 auto;
+	color: #E8CD84;
 }
 @keyframes move {
   50% {
-     transform: translate(0, 3px);
+     transform: scale(1.1);
   }
 }
 
