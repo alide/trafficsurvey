@@ -195,7 +195,7 @@ a:hover, a:focus {
 .intro {
 	width: 100%;
 	height: 100vh;
-	min-height: 600px;
+	min-height: 550px;
 	padding: 0;
 	position: relative;
 }
@@ -230,12 +230,12 @@ a:hover, a:focus {
 }
 .arrow-down .fa {
 	font-size: 3em;
-	animation: move 1s ease-in-out infinite;
+	animation: glow 1s ease-in-out infinite;
 	display: block;
   margin: 0 auto;
 	color: #E8CD84;
 }
-@keyframes move {
+@keyframes glow {
   50% {
      transform: scale(1.1);
   }
@@ -245,7 +245,7 @@ ul.certificate-links {
 	list-style: none;
 }
 ul.certificate-links li {
-	margin: 0.5em 0;
+	margin: 0.4em 0;
 }
 ul.certificate-links li::before {
 	font: normal normal normal 14px/1 FontAwesome;
@@ -295,7 +295,7 @@ ul.checklist li::before {
 
 .call-us {
 	text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
-	margin-top: 1.125em;
+	margin-top: 1em;
 }
 
 .section {
@@ -460,7 +460,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* For Mobiles */
 @media (max-width: 768px) {
 	html, body {
-		font-size: 14px;
+		font-size: 15px; /* 15/24px */
 		line-height: 1.6em;
 	}
 	img.certificate {
@@ -468,6 +468,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	}
 	.intro-text {
 		text-align: center;
+	}
+	.intro h1 {
+		font-size: 2.8em; /* 42/54px */
+		line-height: 1.285714em;
+		margin-top: 1.1428570em;
+		margin-bottom: 0.571428em;
 	}
 	.service {
 		margin-top: 2.4em;
@@ -480,7 +486,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* For Tablets */
 @media (max-width: 992px) {
 	html, body {
-		font-size: 14px;
+		font-size: 15px;
 		line-height: 1.6em;
 	}
 }
