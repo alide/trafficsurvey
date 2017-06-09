@@ -45,10 +45,9 @@ function main() {
 
     // Nivo Lightbox 
     $('.certificate-links a').nivoLightbox({
-            effect: 'slideDown',  
-            keyboardNav: true,                            
-        });
- 
+      effect: 'slideDown',  
+      keyboardNav: true,                            
+    });
 
 }());
 
