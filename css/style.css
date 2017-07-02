@@ -76,6 +76,10 @@ sub {
 
 
 /* Styling */
+.logo {
+	float: left;
+  margin-right: 3px;
+}
 a {
 	color: #f6f6f6;
 }
@@ -114,6 +118,8 @@ a:hover, a:focus {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 1.0625em;
+  display: flex;
+  align-items: center;
 }
 #menu a.navbar-brand i.fa {
 	font-size: 18px;
