@@ -118,8 +118,11 @@ a:hover, a:focus {
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 1.0625em;
+}
+.logo-wrapper {
   display: flex;
   align-items: center;
+  flex-wrap: nowrap;
 }
 #menu a.navbar-brand i.fa {
 	font-size: 18px;
