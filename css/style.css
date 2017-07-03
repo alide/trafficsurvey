@@ -112,7 +112,7 @@ a:hover, a:focus {
 	background-color: rgba(248, 248, 248, 0);
 	border-color: rgba(231, 231, 231, 0);
 }
-#menu a.navbar-brand {
+#menu .navbar-brand {
 	color: rgba(255,255,255,0.7);
 	font-weight: 600;
 	text-transform: uppercase;
@@ -124,7 +124,7 @@ a:hover, a:focus {
   align-items: center;
   flex-wrap: nowrap;
 }
-#menu a.navbar-brand i.fa {
+#menu .navbar-brand i.fa {
 	font-size: 18px;
 	color: #05C3CB;
 	vertical-align: top;
