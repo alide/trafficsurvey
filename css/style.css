@@ -368,6 +368,9 @@ ul.checklist li::before {
 	color: #ccffff;
 	transition: all 0.5s;
 }
+#services p.space-top {
+	margin-top: 1.125em;
+}
 
 /* Contact Section */
 #contact {
