@@ -194,7 +194,7 @@ a:hover, a:focus {
 
 /* Header Section */
 #header {
-	 background: url(../img/header-bg4.jpg) no-repeat left top; 
+	 background: url(../img/header-bg5.jpg) no-repeat left top; 
 	background-color: #1a3359;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -395,7 +395,7 @@ ul.checklist li::before {
 	padding: 30px 0;
 }
 #contact .text-danger {
-	color: #E8CD84;
+	color: #99ff9e;
 	text-align: left;
 }
 label {
@@ -449,12 +449,12 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #contact .alert-danger {
 	font-family: Lato, sans-serif;
-    color: #E8CD84;
+    color: #99ff9e;
     background-color: transparent;
-    border-color: #E8CD84;
+    border-color: #99ff9e;
 }
 #contact .close {
-	color: #E8CD84;
+	color: #99ff9e;
 	text-shadow: none;
 	opacity: 1;
 }
