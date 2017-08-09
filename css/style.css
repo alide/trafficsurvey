@@ -97,7 +97,7 @@ a {
 }
 a:hover, a:focus {
 	text-decoration: none;
-	color: #09A3AA;
+	color: #99ff9e;
 }
 
 
@@ -194,7 +194,7 @@ a:hover, a:focus {
 
 /* Header Section */
 #header {
-	 background: url(../img/header-bg5.jpg) no-repeat left top; 
+	 background: url(../img/header-bg5.jpg) no-repeat center top; 
 	background-color: #1a3359;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -225,7 +225,6 @@ a:hover, a:focus {
   transform: translate(0, -50%);
 }
 .intro-text a:hover {
-	color: #54D4D9;
 	font-weight: bold;
 }
 .intro-img {
