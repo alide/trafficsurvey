@@ -537,7 +537,10 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
     float: none;
   }
   .section {
-    padding: 4.8em 0;
+    padding: 6.2em 0 4.8em 0;
+  }
+  #intro2 {
+    padding-top: 4.8em;
   }
 }
 
