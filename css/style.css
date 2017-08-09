@@ -99,10 +99,7 @@ a:hover, a:focus {
 	text-decoration: none;
 	color: #09A3AA;
 }
-.arrow-down a:hover, .arrow-down a:focus {
-	text-decoration: none;
-	color: #E8CD84;
-}
+
 
 /* Navigation */
 #menu {
@@ -162,7 +159,7 @@ a:hover, a:focus {
 
 .btn-custom {
 	text-transform: uppercase;
-	color: #fff; /* #414a52;*/
+	color: #414a52;
 	font-weight: bold;
 	letter-spacing: 0.05em;
 	background-color: #7fdce6;
@@ -175,7 +172,7 @@ a:hover, a:focus {
 	transition: all 0.3s;
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
-	background-color: #7fdce6;
+	background-color: #99ff9e;
 	color: #414a52;
 }
 .btn-default {
@@ -246,12 +243,16 @@ a:hover, a:focus {
 	animation: glow 1s ease-in-out infinite;
 	display: block;
   margin: 0 auto;
-	color: #E8CD84;
+	color: #99ff9e;
 }
 @keyframes glow {
   50% {
      transform: scale(1.1);
   }
+}
+.intro .arrow-down a:hover .fa {
+	text-decoration: none;
+	color: #99ff9e;
 }
 
 ul.certificate-links {
@@ -419,7 +420,7 @@ label {
 	transition: none;
 }
 #contact .form-control:focus {
-	border-color: #09A3AA;
+	border-color: #99ff9e;
 	outline: 0;
 	-webkit-box-shadow: transparent;
 	box-shadow: transparent;
