@@ -128,12 +128,12 @@ a:hover, a:focus {
 
  #menu .navbar-brand i.fa {
 	font-size: 18px;
-	color: #05C3CB;
+	color: #7fdce6;
 	vertical-align: top;
 } 
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
-	color: rgba(0,0,0,0.4);
+	color: rgba(0,0,0,0.5);
 	font-size: 0.875em;
 	letter-spacing: 1px;
 }
@@ -165,7 +165,7 @@ a:hover, a:focus {
 	color: #fff; /* #414a52;*/
 	font-weight: bold;
 	letter-spacing: 0.05em;
-	background-color: #05C3CB;
+	background-color: #7fdce6;
 	border: 0;
 	padding: 0.8em 3em;
 	margin: 0;
@@ -175,12 +175,12 @@ a:hover, a:focus {
 	transition: all 0.3s;
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
-	background-color: #05C3CB;
+	background-color: #7fdce6;
 	color: #414a52;
 }
 .btn-default {
 	text-transform: uppercase;
-	color: #05C3CB;
+	color: #7fdce6;
 	background-color: #414a52;
 	border: 0;
 	padding: 14px 20px;
@@ -191,18 +191,19 @@ a:hover, a:focus {
 	transition: all 0.3s;
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
-	color: #05C3CB;
+	color: #7fdce6;
 	background-color: #343b42;
 }
 
 /* Header Section */
 #header {
-	background: url(../img/header-bg2.jpg) no-repeat left top;
+	 background: url(../img/header-bg4.jpg) no-repeat left top; 
 	background-color: #1a3359;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-	-o-background-size: cover;
+  -o-background-size: cover;
+  /* background-image: linear-gradient(225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
 }
 .intro {
 	width: 100%;
@@ -263,7 +264,7 @@ ul.certificate-links li::before {
 	font: normal normal normal 14px/1 FontAwesome;
 	-webkit-font-smoothing: antialiased;
 	content: "\f045";
-	color: #05C3CB;
+	color: #7fdce6;
 	margin-right: 0.75em;
 }
 
@@ -281,7 +282,7 @@ ul.checklist li::before {
 	margin-right: 0.75em;
 }
 .dark ul.checklist li::before {
-	color: #05C3CB;
+	color: #7fdce6;
 }
 #intro3 ul.checklist li {
 	font-size: 1.125em;
@@ -326,7 +327,7 @@ ul.checklist li::before {
 	background: -webkit-linear-gradient(top, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(127,220,230,1) 0%, rgba(84,208,221,1) 100%); /* Chrome10-25,Safari5.1-6 */
 	background: linear-gradient(to bottom, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(84,208,221,1) 0%, rgba(127,220,230,1) 0%, rgba(84,208,221,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7fdce6', endColorstr='#7fdce6', GradientType=0 ); /* IE6-9 */
-	color: #414a52;
+  color: #414a52;
 }
 .dark {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d3a63+0,1a3359+46,1a3359+100 */
@@ -338,7 +339,7 @@ ul.checklist li::before {
   background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
 }
 .blue {
-	color: #05C3CB;
+	color: #7fdce6;
 }
 .fa-jumbo {
 	font-size: 8em;
@@ -379,7 +380,7 @@ ul.checklist li::before {
 /* Contact Section */
 #contact {
 	color: #09A3AA;
-	background: #1a3359 url("../img/map.png") center no-repeat;
+	background: #0d3572 url("../img/map.png") center no-repeat;
 	background-size: contain;
 }
 #contact .section-title {
@@ -469,7 +470,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	color: rgba(255,255,255,0.7);
 }
 #footer a:hover {
-	color: #05C3CB;
+	color: #7fdce6;
 }
 
 
