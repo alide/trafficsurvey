@@ -9,7 +9,7 @@ body, .article {
   line-height: 1.625em;
   text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
-	color: #fff;
+	color: #333;
 }
 h1, h2 {
 	font-family: 'Josefin Sans', sans-serif;
@@ -79,6 +79,7 @@ sub {
 .logo {
 	float: left;
   margin-right: 3px;
+  text-indent: -10000px;
 }
 a {
 	color: #f6f6f6;
@@ -112,46 +113,48 @@ a:hover, a:focus {
 	background-color: rgba(248, 248, 248, 0);
 	border-color: rgba(231, 231, 231, 0);
 }
-#menu .navbar-brand {
+ #menu .navbar-brand {
 	color: rgba(255,255,255,0.7);
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-size: 1.0625em;
-}
+} 
 .logo-wrapper {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
 }
-#menu .navbar-brand i.fa {
+
+ #menu .navbar-brand i.fa {
 	font-size: 18px;
 	color: #05C3CB;
 	vertical-align: top;
-}
+} 
 #menu.navbar-default .navbar-nav > li > a {
 	text-transform: uppercase;
-	color: rgba(255,255,255,0.7);
+	color: rgba(0,0,0,0.4);
 	font-size: 0.875em;
 	letter-spacing: 1px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #05C3CB;
+	color: rgba(0,0,0,0.9);
 }
 .on {
-	background-color: #343b42 !important;
+	background-image: linear-gradient(120deg, #FFFEFF 0%, #D7FFFE 100%) !important; 
 	padding: 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #54D4D9 !important;
-	background-color: transparent;
+	color: rgba(0,0,0,0.9) !important;
+  background-color: transparent;
 }
 .navbar-toggle {
-	border-radius: 0;
+  border-radius: 0;
+  border: none;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #54D4D9;
-	border-color: #54D4D9;
+	background-color: #00CCCC;
+	border-color: #00CCCC;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
@@ -327,11 +330,12 @@ ul.checklist li::before {
 }
 .dark {
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#1d3a63+0,1a3359+46,1a3359+100 */
-	background: #1d3a63; /* Old browsers */
-	background: -moz-linear-gradient(top, #1d3a63 0%, #1a3359 46%, #1a3359 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(top, #1d3a63 0%,#1a3359 46%,#1a3359 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(to bottom, #1d3a63 0%,#1a3359 46%,#1a3359 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1d3a63', endColorstr='#1a3359',GradientType=0 ); /* IE6-9 */
+	background: #eef1f5; /* Old browsers */
+	background: -moz-linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%); /* Chrome10-25,Safari5.1-6 */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6e9f0', endColorstr='#eef1f5',GradientType=0 ); /* IE6-9 */
+  
+  background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
 }
 .blue {
 	color: #05C3CB;
@@ -344,7 +348,7 @@ ul.checklist li::before {
 }
 
 #intro2, #about {
-	background: url("../img/bg2.jpg") center no-repeat;
+	/* background: url("../img/bg2.jpg") center no-repeat; */
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -492,7 +496,16 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	}
 	.text-larger {
 		font-size: 1.25em;
-	}
+  }
+  .logo {
+    width: 70%;
+  }
+  .logo-wrapper a {
+    display: inline-block;
+  }
+  #menu .navbar-brand {
+    float: none;
+  }
 }
 
 /* For Tablets */
