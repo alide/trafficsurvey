@@ -1,6 +1,6 @@
 html, .root {
   font-size: 1em;
-  line-height: 1.625em; /* 16/26px */
+	line-height: 1.625em; /* 16/26px */
 }
 body, .article {
   font-family: Lato, sans-serif;
@@ -10,6 +10,7 @@ body, .article {
   text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #333;
+	overflow-x: hidden;
 }
 h1, h2 {
 	font-family: 'Josefin Sans', sans-serif;
