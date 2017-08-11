@@ -84,7 +84,7 @@ $(function(){
     var text = $('#about p');
     var tl2 = new TimelineMax()
       .from(text, 0.6, {opacity: 0, y: -50})
-      .staggerFrom(listItems, 0.6, {x: 50, opacity:0, ease: Power4.easeOut}, 0.8);
+      .staggerFrom(listItems, 0.4, {x: 150, opacity:0, ease: Cubic.easeOut}, 0.4);
 
     var sceneAbout = new ScrollMagic.Scene()
       .triggerElement("#about")
