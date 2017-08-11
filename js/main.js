@@ -61,20 +61,37 @@ $(function(){
 
     // Init
     var controller = new ScrollMagic.Controller();
-    var tl = new TimelineMax();
 
+    // Animate header
+    var certImg = $('#header img');
+    var title = $('#header h1');
+    var certs = $('#header ul.certificate-links li');
+    var callBtn = $('#header .call-us');
+    var arrow = $('#header .arrow-down');
+    var tl0 = new TimelineMax()
+      .from(certImg, 0.8, {x: 350, y: -50, opacity: 0, rotation: 30, ease: Power1.easeInOut})
+      .from(title, 0.6, {y: -30, opacity: 0, ease: Cubic.easeInOut})
+      .staggerFrom(certs, 0.6, {x: -150, opacity:0, ease: Cubic.easeInOut}, 0.3)
+      .from(callBtn, 0.4, {opacity: 0, scale: 0})
+      .from(arrow, 0.4, {opacity: 0, scale: 1.25, y: -20})
+
+    var sceneHeader = new ScrollMagic.Scene({triggerHook: 0, reverse: false})
+      .triggerElement("#header")
+      .setTween(tl0)
+      .addTo(controller);
     
     // Animate target
-    var sceneTarget = new ScrollMagic.Scene()
+    var sceneTarget = new ScrollMagic.Scene({reverse: false})
       .triggerElement('#target')
       .setClassToggle('#target', 'focusing')
       .addTo(controller);
     
     // Animate Intro3 list
     var listItems = $('#intro3 ul.checklist li');
-    tl.staggerFrom(listItems, 0.4, {x: -50, opacity:0, ease: Cubic.easeInOut}, 0.2);
+    var tl = new TimelineMax();
+    tl.staggerFrom(listItems, 0.4, {x: -150, opacity:0, ease: Cubic.easeInOut}, 0.2);
 
-    var sceneStrength = new ScrollMagic.Scene()
+    var sceneStrength = new ScrollMagic.Scene({reverse: false})
       .triggerElement("#intro3")
       .setTween(tl)
       .addTo(controller);
@@ -84,9 +101,9 @@ $(function(){
     var text = $('#about p');
     var tl2 = new TimelineMax()
       .from(text, 0.6, {opacity: 0, y: -50})
-      .staggerFrom(listItems, 0.4, {x: 150, opacity:0, ease: Cubic.easeOut}, 0.4);
+      .staggerFrom(listItems, 0.4, {x: 300, opacity:0, ease: Cubic.easeOut}, 0.4);
 
-    var sceneAbout = new ScrollMagic.Scene()
+    var sceneAbout = new ScrollMagic.Scene({reverse: false})
       .triggerElement("#about")
       .setTween(tl2)
       .addTo(controller);
@@ -96,11 +113,11 @@ $(function(){
     var etc = $('#services .etc');
     var icons = $('#services .icon-wrapper');
     var tl3 = new TimelineMax()
-      .staggerFrom(icons, 0.4, {y: -10, opacity:0, ease: Cubic.easeInOut}, 0.2)
+      .staggerFrom(icons, 0.4, {x: -50, y: -30, opacity:0, rotation: -180, ease: Cubic.easeInOut}, 0.2)
       .staggerFrom(serviceDesc, 0.6, {x: -100, opacity:0, scale: 1.25, ease: Cubic.easeInOut}, 0.2)
       .from(etc, 0.6, {y: -20, opacity:0, ease: Cubic.easeInOut})
 
-    var sceneServices = new ScrollMagic.Scene()
+    var sceneServices = new ScrollMagic.Scene({reverse: false})
       .triggerElement("#services")
       .setTween(tl3)
       .addTo(controller);
