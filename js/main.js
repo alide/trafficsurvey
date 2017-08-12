@@ -69,7 +69,7 @@ $(function(){
     var callBtn = $('#header .call-us');
     var arrow = $('#header .arrow-down');
     var tl0 = new TimelineMax()
-      .from(certImg, 0.6, {x: 100, opacity: 0, ease: Power1.easeInOut})
+      .from(certImg, 0.8, {x: 100, opacity: 0, scale: 1.1, ease: Cubic.easeOut})
       .from(title, 0.8, {y: -100, opacity: 0, ease: Circ.easeOut})
       .staggerFrom(certs, 0.8, {x: -50, opacity:0, ease: Cubic.easeOut}, 0.4)
       .from(callBtn, 0.8, {x: -50, opacity: 0, scale: 2})
