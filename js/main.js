@@ -72,7 +72,7 @@ $(function(){
       .from(certImg, 0.6, {x: 100, opacity: 0, ease: Power1.easeInOut})
       .from(title, 0.8, {y: -100, opacity: 0, ease: Circ.easeOut})
       .staggerFrom(certs, 0.8, {x: -50, opacity:0, ease: Cubic.easeOut}, 0.4)
-      .from(callBtn, 0.8, {y: -50, opacity: 0, scale: 2})
+      .from(callBtn, 0.8, {x: -50, opacity: 0, scale: 2})
       .from(arrow, 0.4, {opacity: 0, scale: 1.25, y: -20}, "+=0.5")
 
     var sceneHeader = new ScrollMagic.Scene({triggerHook: 1, reverse: false})
