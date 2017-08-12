@@ -205,6 +205,7 @@ a:hover, a:focus {
 	margin: 0;
 	font-size: 0.9em;
 	color: white;
+	line-height: 1.2em;
 } 
 
 /* Header Section */
@@ -571,7 +572,13 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   }
   #intro2 {
     padding-top: 4.8em;
-  }
+	}
+	#notation {
+		height: 50px;
+	}
+	#header {
+		height: calc(100vh - 100px);
+	}
 }
 
 /* For Tablets */
