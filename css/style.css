@@ -210,13 +210,12 @@ a:hover, a:focus {
 
 /* Header Section */
 #header {
-	 background: url(../img/header-bg5.jpg) no-repeat center top; 
+	background: url(../img/header-bg5.jpg) no-repeat center top; 
 	background-color: #1a3359;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
   -o-background-size: cover;
-  /* background-image: linear-gradient(225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%); */
 }
 .intro {
 	width: 100%;
