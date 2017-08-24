@@ -144,8 +144,8 @@ $(function(){
     var etc = $('#services .etc');
     var icons = $('#services .icon-wrapper');
     var tl3 = new TimelineMax()
-      .staggerFrom(icons, 0.4, {x: -50, y: -30, opacity:0, rotation: -180, ease: Cubic.easeInOut}, 0.2)
-      .staggerFrom(serviceDesc, 0.6, {x: -50, opacity:0, scale: 1.25, ease: Cubic.easeInOut}, 0.2)
+      .staggerFrom(icons, 0.4, {x: -50, y: -30, opacity:0, rotation: -180, ease: Cubic.easeInOut}, 0.2, "startTime")
+      .staggerFrom(serviceDesc, 0.6, {x: -50, opacity:0, scale: 1.25, ease: Cubic.easeInOut}, 0.2, "startTime")
       .from(etc, 0.6, {y: -20, opacity:0, ease: Cubic.easeInOut})
 
     var sceneServices = new ScrollMagic.Scene({reverse: false})
