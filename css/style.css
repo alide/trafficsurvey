@@ -303,6 +303,10 @@ ul.checklist li::before {
 .dark ul.checklist li::before {
 	color: #7fdce6;
 }
+#intro3 {
+	background: url("../img/bg-train.jpg") center no-repeat;
+	background-size: cover;
+}
 #intro3 ul.checklist li {
 	font-size: 1.125em;
 	line-height: 1.6667em; /*18/30px*/
@@ -367,6 +371,9 @@ ul.checklist li::before {
 	margin-top: 3.25em;
 }
 
+#about {
+	background-image: linear-gradient(to top, #FFFEFF 0%, #D7FFFE 100%);	
+}
 #intro2, #about {
 	/* background: url("../img/bg2.jpg") center no-repeat; */
 	-webkit-background-size: cover;
@@ -407,7 +414,9 @@ ul.checklist li::before {
 }
 
 #about2 {
-	background-image: linear-gradient(to bottom, white 80%, #dfe9f3 100%);
+	/* background-image: linear-gradient(to bottom, white 80%, #dfe9f3 100%); */
+	background: url("../img/bg-escalator.jpg") center no-repeat;
+	background-size: cover;
 }
 #about2 .small {
 	opacity: 0.6;
@@ -437,10 +446,14 @@ ul.clientlist li::before {
 	font-size: 12px;
 	font-weight: 600;
 	position: relative;
-	top: -1.2em;
+	top: -0.4em;
 }
 
 /* Service Section */
+#services {
+	background: url("../img/bg-highways.jpg") center no-repeat;
+	background-size: cover;
+}
 .service {
 	margin-top: 3.25em;
 }
