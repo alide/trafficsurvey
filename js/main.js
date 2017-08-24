@@ -99,9 +99,12 @@ $(function(){
     // Animate About list
     var listItems = $('#about ul.checklist li');
     var text = $('#about p');
+    var btn = $('#about .btn-custom');
+
     var tl2 = new TimelineMax()
       .from(text, 0.6, {opacity: 0, y: -50})
-      .staggerFrom(listItems, 0.4, {y: -20, opacity: 0, ease: Cubic.easeOut}, 0.2);
+      .staggerFrom(listItems, 0.4, {y: -20, opacity: 0, ease: Cubic.easeOut}, 0.2)
+      .from(btn, 0.6, {opacity: 0});
 
     var sceneAbout = new ScrollMagic.Scene({reverse: false})
       .triggerElement("#about")

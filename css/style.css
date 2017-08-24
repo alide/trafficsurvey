@@ -83,7 +83,10 @@ sub {
   text-indent: -10000px;
 }
 a {
-	color: #f6f6f6;
+	color: #48e0b8;
+}
+a:hover {
+	color: #99ff9e;
 }
 #contact a {
 	color: #54D4D9;
@@ -166,11 +169,10 @@ a:hover, a:focus {
 	background-color: #48e0b8;
 	border: 0;
 	padding: 0.8em 3em;
-	margin: 0;
+	margin: 1.6em 0;
 	font-size: 1em;
 	border-radius: 0;
-	margin-top: 1.6em;
-	transition: all 0.3s;
+	transition: all 0.3s ease-in-out;
 }
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
 	background-color: #99ff9e;
@@ -283,7 +285,7 @@ ul.certificate-links li::before {
 	font: normal normal normal 14px/1 FontAwesome;
 	-webkit-font-smoothing: antialiased;
 	content: "\f045";
-	color: #7fdce6;
+	color: #48e0b8;
 	margin-right: 0.75em;
 }
 
@@ -315,7 +317,7 @@ ul.checklist li::before {
 }
 
 .btn-outline {
-	border: 1px solid #48e0b8;
+	border: 2px solid #48e0b8;
 	border-radius: 0;
 	color: #48e0b8;
 }
