@@ -107,6 +107,34 @@ $(function(){
       .triggerElement("#about")
       .setTween(tl2)
       .addTo(controller);
+    
+    // Animate About part 2
+    var clientList = $('#about2 ul.clientlist li');
+    var firstPara = $('#about2 p.first');
+    var otherPara = $('#about2 p.rest');
+
+    var tl2_2 = new TimelineMax()
+      .from(firstPara, 0.6, {opacity: 0, y: -50})
+      .staggerFrom(clientList, 0.6, {x: 50, opacity: 0, ease: Cubic.easeOut}, 0.2)
+      .staggerFrom(otherPara, 0.6, {opacity: 0, y: -20}, 0.6);
+
+    var sceneAbout2 = new ScrollMagic.Scene({reverse: false})
+      .triggerElement("#about2")
+      .setTween(tl2_2)
+      .addTo(controller);
+    
+    // Commitment
+    var text2 = $('#intro2 p');
+    var commitmentList = $('#intro2 .checklist li');
+    
+    var tl2_3 = new TimelineMax()
+      .from(text2, 0.6, {opacity: 0, y: -50})
+      .staggerFrom(commitmentList, 0.6, {x: 100, opacity: 0, ease: Cubic.easeOut}, 0.2)
+    
+    var sceneIntro2 = new ScrollMagic.Scene({reverse: false})
+      .triggerElement("#intro2")
+      .setTween(tl2_3)
+      .addTo(controller);
 
     // Services
     var serviceDesc = $('#services .service .desc');

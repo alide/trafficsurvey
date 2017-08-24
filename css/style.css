@@ -215,7 +215,8 @@ a:hover, a:focus {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
-  -o-background-size: cover;
+	-o-background-size: cover;
+	color: #fff;
 }
 .intro {
 	width: 100%;
@@ -403,6 +404,28 @@ ul.checklist li::before {
 
 #diamond {
   animation: glow 2s ease-in-out infinite;
+}
+
+#about2 {
+	background-image: linear-gradient(to bottom, white 80%, #dfe9f3 100%);
+}
+#about2 .small {
+	opacity: 0.6;
+}
+
+ul.clientlist li {
+	display: inline-block;
+	margin: 0.4em 1.5em;
+}
+ul.clientlist li::before {
+	font: normal normal normal 16px/1 FontAwesome;
+	-webkit-font-smoothing: antialiased;
+	content: "\f05d";
+	margin-right: 0.25em;
+	color: #48e0b8;
+}
+#about2 em {
+	display: inline-block;
 }
 
 /* Service Section */
