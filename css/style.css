@@ -428,6 +428,18 @@ ul.clientlist li::before {
 	display: inline-block;
 }
 
+.tts-badge {
+	display: inline-block;
+	background: #99ff9e;
+	color: #0d3572;
+	border-radius: 50%;
+	padding: 0.25em 0.5em;
+	font-size: 12px;
+	font-weight: 600;
+	position: relative;
+	top: -1.2em;
+}
+
 /* Service Section */
 .service {
 	margin-top: 3.25em;
