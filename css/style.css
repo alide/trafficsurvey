@@ -214,7 +214,7 @@ a:hover, a:focus {
 
 /* Header Section */
 #header {
-	background: url(../img/header-bg5.jpg) no-repeat center top; 
+	background: url(../img/header-bg4.jpg) no-repeat center top; 
 	background-color: #1a3359;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -346,7 +346,7 @@ ul.checklist li::before {
 .call-us {
 	text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
 	margin-top: 1em;
-	font-size: 1.5em;
+	font-size: 1.25em;
 	padding: 0.8em 1.2em;
 	background: rgba(0, 0, 0, 0.25);
 }
