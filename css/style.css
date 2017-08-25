@@ -11,7 +11,7 @@ body, .article {
   text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #333;
-	height: 100%;
+	width: 100%;
 	overflow-x: hidden;
 }
 h1, h2 {
@@ -281,6 +281,7 @@ ul.certificate-links {
 }
 ul.certificate-links li {
 	margin: 0;
+	text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.2);		
 }
 ul.certificate-links li::before {
 	font: normal normal normal 14px/1 FontAwesome;
@@ -294,6 +295,7 @@ ul.certificate-links li a {
 }
 ul.certificate-links li a:hover {
 	color: #99ff9e;
+	text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.4);	
 }
 
 ul.checklist {
