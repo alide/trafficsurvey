@@ -1,6 +1,7 @@
 html, .root {
   font-size: 1em;
 	line-height: 1.625em; /* 16/26px */
+	height: 100%;
 }
 body, .article {
   font-family: Lato, sans-serif;
@@ -10,6 +11,7 @@ body, .article {
   text-rendering: optimizeLegibility !important;
 	-webkit-font-smoothing: antialiased !important;
 	color: #333;
+	height: 100%;
 	overflow-x: hidden;
 }
 h1, h2 {
@@ -263,8 +265,7 @@ a:hover, a:focus {
   margin: 0 auto;
 	color: #99ff9e;
 }
-@keyframes glow {
-  
+@keyframes glow {  
   50% {
     opacity: 0.5;
     transform: scale(1.1);
@@ -279,14 +280,20 @@ ul.certificate-links {
 	list-style: none;
 }
 ul.certificate-links li {
-	margin: 0.4em 0;
+	margin: 0;
 }
 ul.certificate-links li::before {
 	font: normal normal normal 14px/1 FontAwesome;
 	-webkit-font-smoothing: antialiased;
 	content: "\f045";
-	color: #48e0b8;
+	color: #99ff9e;
 	margin-right: 0.75em;
+}
+ul.certificate-links li a {
+	color: #f6f6f6;
+}
+ul.certificate-links li a:hover {
+	color: #99ff9e;
 }
 
 ul.checklist {
@@ -320,6 +327,9 @@ ul.checklist li::before {
 	border: 2px solid #48e0b8;
 	border-radius: 0;
 	color: #48e0b8;
+	display: inline-block;
+	padding: 6px 15px;
+	cursor: pointer;
 }
 .btn-outline:hover {
 	color: #99ff9e;
@@ -334,6 +344,9 @@ ul.checklist li::before {
 .call-us {
 	text-shadow: 1px 3px 2px rgba(0, 0, 0, 0.3);
 	margin-top: 1em;
+	font-size: 1.5em;
+	padding: 0.8em 1.2em;
+	background: rgba(0, 0, 0, 0.25);
 }
 
 .section {
@@ -375,6 +388,9 @@ ul.checklist li::before {
 
 #about {
 	background-image: linear-gradient(to top, #FFFEFF 0%, #D7FFFE 100%);	
+}
+img#target {
+	margin-bottom: 0.8em;
 }
 #intro2, #about {
 	/* background: url("../img/bg2.jpg") center no-repeat; */
@@ -464,23 +480,29 @@ ul.clientlist li::before {
 }
 #services i.fa {
 	font-size: 2.25em;
-	color: #48e0b8;
-	transition: all 0.5s;
+	color: #0d3572;
+}
+#services .service p {
+	opacity: 0.6;
 }
 #services p.space-top {
 	margin-top: 1.125em;
 }
 .section .icon-wrapper {
-	width: 120px;
-	height: 120px;
+	width: 110px;
+	height: 110px;
 	margin: 0 auto;
 	border-radius: 100%;
 	background: white;
+	background-image: linear-gradient(120deg, white 0%, #dfe9f3 100%);
 	box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	margin-bottom: 1.625em;
+	margin-bottom: 1.769em;
+}
+#services h4 {
+	margin-bottom: 0;
 }
 
 
@@ -596,13 +618,27 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 		text-align: center;
 	}
 	.intro h1 {
-		font-size: 2.8em; /* 42/54px */
-		line-height: 1.285714em;
-		margin-top: 1.1428570em;
-		margin-bottom: 0.571428em;
+		font-size: 2.4em; /* 36/48px */
+		line-height: 1em;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	ul.certificate-links {
+		margin: 1.6em 0 0.8em;
+	}
+	ul.certificate-links li {
+		line-height: 1.25em;
+		margin-bottom: 0.4em;
+	}
+	.call-us {
+		padding: 0.45em 1em;
 	}
 	.service {
 		margin-top: 2.4em;
+	}
+	.section .icon-wrapper {
+		width: 100px;
+		height: 100px;	
 	}
 	.text-larger {
 		font-size: 1.25em;
