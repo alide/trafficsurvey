@@ -728,7 +728,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	}
 	.intro h1 {
 		font-size: 2.4em; /* 36/48px */
-		line-height: 1em;
+		line-height: 1.25em;
 		margin-top: 1em;
 		margin-bottom: 0.5em;
 	}
