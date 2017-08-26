@@ -96,7 +96,7 @@ $(function(){
         .from(title, 1, {y: 50, opacity: 0, ease: Circ.easeOut})
         .from(headerPara, 0.8, {y: 50, opacity: 0, ease: Circ.easeOut}, "text")
         .staggerFrom(headerKeywords, 0.8, {opacity: 0, scale: 1.25, ease: Cubic.easeOut}, 0.4, "text")
-        .fromTo(callBtn, 0.4,
+        .fromTo(callBtn, 0.6,
           {y: -50, opacity: 0, scale: 0},
           {y: 0, opacity: 0.5, scale: 1.25})
         .to(callBtn, 0.4, {opacity: 1, scale: 1})
@@ -106,7 +106,7 @@ $(function(){
         .triggerElement("#header")
         .setTween(tl0)
         .addTo(controller);  
-    
+  
     // Animate target
     var sceneTarget = new ScrollMagic.Scene({reverse: false})
       .triggerElement('#target')
