@@ -469,7 +469,7 @@ img#target {
 
 ul.clientlist li {
 	display: inline-block;
-	margin: 0.4em 1.5em;
+	margin: 0.4em 0.75em;
 }
 ul.clientlist li::before {
 	font: normal normal normal 16px/1 FontAwesome;
@@ -673,6 +673,9 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	.section .icon-wrapper {
 		width: 100px;
 		height: 100px;	
+	}
+	#about .section-title {
+		margin-bottom: 0;
 	}
 	.text-larger {
 		font-size: 1.25em;
