@@ -231,7 +231,12 @@ a:hover, a:focus {
 	font-size: 0.9em;
 	color: white;
 	line-height: 1.2em;
-} 
+}
+
+/* Preventing scroll on Animation */
+#header, .section {
+	overflow: hidden;
+}
 
 /* Header Section */
 #header {
