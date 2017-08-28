@@ -574,7 +574,8 @@ ul.clientlist li::before {
 	margin-top: 3.25em;
 }
 .service h4 {
-	text-transform: capitalize;
+	line-height: 1.3em;
+	margin: 1em auto 0.3em;	
 }
 #services i.fa {
 	font-size: 2.25em;
@@ -607,9 +608,6 @@ ul.clientlist li::before {
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	margin-bottom: 1.769em;
-}
-#services h4 {
-	margin-bottom: 0;
 }
 
 
