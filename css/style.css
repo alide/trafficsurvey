@@ -212,7 +212,7 @@ a:hover, a:focus {
 	background-color: #343b42;
 }
 
- #notation {
+ #location {
 	margin-top: 50px;
 	background: #0d3572;
 	background-image: -webkit-linear-gradient(315deg, #1D8FE1 48%, #625EB1 100%);
@@ -226,7 +226,7 @@ a:hover, a:focus {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-#notation p {
+#location p {
 	margin: 0;
 	font-size: 0.9em;
 	color: white;
@@ -780,7 +780,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
   #intro2 {
     padding-top: 4.8em;
 	}
-	#notation {
+	#location {
 		height: 50px;
 		text-align: center;
 	}
