@@ -60,14 +60,14 @@ $(function(){
       var tl0 = new TimelineMax();
 
       tl0.set('.intro', {autoAlpha: 1})
-        .from(certs, 0.4, {y: -100}, "cert")
+        .from(certs, 0.6, {y: -100}, "cert")
         .staggerFrom(certImgs, 0.6, {x: -100, y: -120, opacity: 0, scale: 1.2, rotation: -180, ease: Cubic.easeOut}, 0.3, "cert")
         .from(title, 0.6, {y: 50, opacity: 0, ease: Circ.easeOut}, '-=0.6')
         .from(headerPara, 0.4, {y: 50, opacity: 0, ease: Circ.easeOut}, "text")
         .staggerFrom(headerKeywords, 0.4, {autoAlpha: 0, scale: 1.25, ease: Cubic.easeOut}, 0.2, "text")
         .from(callBtn, 0.6,
           {x: -100, opacity: 0, ease: Cubic.easeOut})
-        .from(arrow, 0.6, {opacity: 0, scale: 1.25, y: -20}, "+=0.5");
+        .from(arrow, 0.6, {opacity: 0, scale: 1.25, y: -20});
 
       var sceneHeader = new ScrollMagic.Scene({triggerHook: 1, reverse: false})
         .triggerElement("#header")
