@@ -1,9 +1,8 @@
-
 function main() {
 
 (function () {
    'use strict';
-   
+
   	$('a.page-scroll').click(function() {
         if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
           var target = $(this.hash);
@@ -17,18 +16,7 @@ function main() {
         }
       });
 
-	
-    // Show Menu on Book
-    // $(window).bind('scroll', function() {
-    //     var navHeight = $(window).height() - 600;
-    //     if ($(window).scrollTop() > navHeight) {
-    //         $('.navbar-default').addClass('on');
-    //     } else {
-    //         $('.navbar-default').removeClass('on');
-    //     }
-    // });
-
-    $('body').scrollspy({ 
+    $('body').scrollspy({
         target: '.navbar-default',
         offset: 80
     });
@@ -41,17 +29,12 @@ function main() {
       $(".navbar-collapse").collapse('hide');
     }
   });
-	
 
-    // Nivo Lightbox 
-    // $('.certificate-links a').nivoLightbox({
-    //   effect: 'slideDown',  
-    //   keyboardNav: true,                            
-    // });
 
+    // Nivo Lightbox
     $('.certificate-thumbs a').nivoLightbox({
-      effect: 'slideDown',  
-      keyboardNav: true,                            
+      effect: 'slideDown',
+      keyboardNav: true,
     });
 
 }());
@@ -61,29 +44,11 @@ function main() {
 
 main();
 
-$(function(){ 
+$(function(){
 	// Animation
 
     // Init
     var controller = new ScrollMagic.Controller();
-
-    // Animate header
-    // var certImg = $('#header img');
-    // var title = $('#header h1');
-    // var certs = $('#header ul.certificate-links li');
-    // var callBtn = $('#header .call-us');
-    // var arrow = $('#header .arrow-down');
-    // var tl0 = new TimelineMax()
-    //   .from(certImg, 0.8, {x: 100, opacity: 0, scale: 1.1, ease: Cubic.easeOut})
-    //   .from(title, 0.8, {y: -100, opacity: 0, ease: Circ.easeOut})
-    //   .staggerFrom(certs, 0.8, {x: -50, opacity:0, ease: Cubic.easeOut}, 0.4)
-    //   .from(callBtn, 0.8, {x: -50, opacity: 0, scale: 2})
-    //   .from(arrow, 0.4, {opacity: 0, scale: 1.25, y: -20}, "+=0.5")
-
-    // var sceneHeader = new ScrollMagic.Scene({triggerHook: 1, reverse: false})
-    //   .triggerElement("#header")
-    //   .setTween(tl0)
-    //   .addTo(controller);
 
       var certs = $('#header ul.certificate-thumbs');
       var certImgs = $('#header img');
@@ -92,27 +57,29 @@ $(function(){
       var headerKeywords = $('#header p strong');
       var callBtn = $('#header .call-us');
       var arrow = $('#header .arrow-down');
-      var tl0 = new TimelineMax()
-        .from(certs, 1, {y: -100}, "cert")
-        .staggerFrom(certImgs, 1, {x: -100, y: -120, opacity: 0, scale: 1.2, rotation: -180, ease: Cubic.easeOut}, 0.4, "cert")
-        .from(title, 1, {y: 50, opacity: 0, ease: Circ.easeOut})
-        .from(headerPara, 0.8, {y: 50, opacity: 0, ease: Circ.easeOut}, "text")
-        .staggerFrom(headerKeywords, 0.8, {opacity: 0, scale: 1.25, ease: Cubic.easeOut}, 0.4, "text")
-        .from(callBtn, 0.8,
+      var tl0 = new TimelineMax();
+
+      tl0.set('.intro', {autoAlpha: 1})
+        .from(certs, 0.4, {y: -100}, "cert")
+        .staggerFrom(certImgs, 0.6, {x: -100, y: -120, opacity: 0, scale: 1.2, rotation: -180, ease: Cubic.easeOut}, 0.3, "cert")
+        .from(title, 0.6, {y: 50, opacity: 0, ease: Circ.easeOut}, '-=0.6')
+        .from(headerPara, 0.4, {y: 50, opacity: 0, ease: Circ.easeOut}, "text")
+        .staggerFrom(headerKeywords, 0.4, {autoAlpha: 0, scale: 1.25, ease: Cubic.easeOut}, 0.2, "text")
+        .from(callBtn, 0.6,
           {x: -100, opacity: 0, ease: Cubic.easeOut})
-        .from(arrow, 0.4, {opacity: 0, scale: 1.25, y: -20}, "+=0.5");
-  
+        .from(arrow, 0.6, {opacity: 0, scale: 1.25, y: -20}, "+=0.5");
+
       var sceneHeader = new ScrollMagic.Scene({triggerHook: 1, reverse: false})
         .triggerElement("#header")
         .setTween(tl0)
-        .addTo(controller);  
-  
+        .addTo(controller);
+
     // Animate target
     var sceneTarget = new ScrollMagic.Scene({reverse: false})
       .triggerElement('#target')
       .setClassToggle('#target', 'focusing')
       .addTo(controller);
-    
+
     // Animate Intro3 list
     var listItems = $('#intro3 ul.checklist li');
     var tl = new TimelineMax();
@@ -137,7 +104,7 @@ $(function(){
       .triggerElement("#about")
       .setTween(tl2)
       .addTo(controller);
-    
+
     // Animate About part 2
     var clientList = $('#about2 ul.clientlist li');
     var firstPara = $('#about2 p.first');
@@ -152,15 +119,15 @@ $(function(){
       .triggerElement("#about2")
       .setTween(tl2_2)
       .addTo(controller);
-    
+
     // Commitment
     var text2 = $('#intro2 p');
     var commitmentList = $('#intro2 .checklist li');
-    
+
     var tl2_3 = new TimelineMax()
       .from(text2, 0.6, {opacity: 0, y: -50})
       .staggerFrom(commitmentList, 0.6, {x: 100, opacity: 0, ease: Cubic.easeOut}, 0.2)
-    
+
     var sceneIntro2 = new ScrollMagic.Scene({reverse: false})
       .triggerElement("#intro2")
       .setTween(tl2_3)
